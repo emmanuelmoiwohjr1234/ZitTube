@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 20px;
+}
+
+/*-----------------------------------------------header-----------------------------*/
+header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% 20%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffffff;
+    z-index:1 ;
+    padding: 10px 15px;
+
+}
+header img{
+    margin-top: 5px;
+    cursor: pointer;
+}
+/*-----------------------------------------------icons styling with in the header-----------------------------*/
+.header-col1{
+    display: flex;
+}
+.header-col2{
+    margin-top: 0;
+
+}
+.header-col3{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+}
+input{
+    padding: 12px 300px 10px  5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-style: solid;
+}
+.fa-magnifying-glass{
+ margin-right: 20px;
+border: 2px solid rgb(118,118,118);
+padding:7px 10px 10px 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+color:rgb(118,118,118) ;
+font-size: 20px;
+cursor: pointer;
+}
+.fa-microphone{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgb(240,240,240);
+}
+.fa-microphone:hover{
+    background-color: rgb(230,230,230) ;
+}
+
+.menu{
+    padding-right: 10px;
+}
+.video-camera,.notification{
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+.menu:hover,.video-camera:hover,.notification:hover{
+    border-radius: 50px;
+    cursor: pointer;
+    background-color:rgb(240,240,240);
+}
+
+.profile-photo{
+    border-radius: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/*-----------------------------------------------sidebar and main-----------------------------*/
+
+.sidebar-and-main{
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    grid-gap: 1em;
+   
+
+}
+/*----------------------------------------------------sidebar--------------------------------------------------------*/
+
+.sidebar{
+    height: 85vh;
+    grid-row: 1/1;
+    padding: 0 15px;
+    position: fixed;
+    top: 67px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    
+}
+
+article{
+    display: flex;
+    
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    border-radius: 20px;
+    
+}
+article:hover{
+    background-color: rgb(240,240,240);
+    border-radius: 20px;
+    cursor: pointer;
+   
+}
+h4{
+    margin-left: 10px;
+}
+article p{
+    margin: 10px;
+    font-size: 13px;
+   
+}
+article img{
+    border-radius: 20px;
+    margin: 7px;
+}
+hr{
+    margin: 10px 10px 10px 0px;
+}
+svg{
+    height: 34px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.Home{
+    background-color: rgb(240,240,240);
+}
+.Home:hover{
+    background-color:rgb(230,230,230) ;
+}
+
+
+
+
+/*----------------------------------------------------------main contant of the page-------------------------------*/
+
+.main{
+   
+    grid-column: 1/3;
+    position: absolute;
+    left: 270px;
+    top: 67px;
+}
+/*-------------------------------buttons to watch various videos of your choice-------------------*/
+.button{
+   position: fixed;
+   z-index: 2;
+   width: 100%;
+   background-color: #ffffff;
+}
+button{
+    padding: 10px 15px;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+button:hover{
+    background-color: rgb(218, 215, 215);
+}
+.button-1{
+    background-color: black;
+    color: #ffffff;
+}
+.button-1:hover{
+    color: black;
+}
+.more-video{
+    cursor: pointer;
+    margin-left: 10px;
+    height: 20px;
+   padding: 0;
+  
+   border-radius: 30px;
+}
+.more-video:hover{
+    background-color: rgb(240,240,240);
+}
+/*------------------------------------ZitTube videos section---------------------------*/
+.main-box{
+    display: grid;
+    grid-template-columns: repeat(3,31.5%);
+    grid-gap: 1em;
+    position: relative;
+    top: 90px;
+}
+
+video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-box-col{
+    display: flex;
+}
+.channel-img{
+    
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.video-title{
+    line-height: 20px;
+    font-size: 15px;
+    
+}
+.channel-name{
+    font-size: 13px;
+    color: rgb(100, 98, 98);
+    line-height: 20px;
+    margin-top: 2px;
+}
+.channel-views{
+    font-size: 12px;
+    color: rgb(100, 98, 98);
+}
+.video-icon{
+    padding: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.video-icon:hover{
+    background-color: rgb(240,240,240);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
